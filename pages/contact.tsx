@@ -17,13 +17,13 @@ const Contact = ({ links }) => {
           <div>
             <img draggable={false} className="sm:m-auto sm:w-1/2 lg:w-full w-full h-full" src="/contact.svg" alt="contact me" />
           </div>
-          <div className="flex flex-col space-y-3 xl:space-y-5">
-            <h1 className="font-bold text-3xl mt-4 mb-6 lg:mb-4 text-center lg:text-left lg:text-3xl">Let's stay in touch 👉👈 </h1>
+          <div className="flex flex-col space-y-5 xl:space-y-5">
+            <h1 className="font-bold text-2xl mt-4 mb-6 lg:mb-4 text-center lg:text-left lg:text-3xl">Let's stay in touch 👉👈</h1>
             <div>
               <p className="text-gray-600 text-center leading-7 sm:w-1/2 sm:m-auto sm:mb-8 lg:leading-8 lg:text-left lg:w-4/5 lg:m-0 lg:text-base">
                 I am available for short term projects and internships, you can reach out to me with the links below. I reply in less than 24 hours.
               </p>
-              <div className="grid grid-cols-1 place-items-center lg:place-items-start sm:grid-cols-2 gap-8 mt-5 mb-8 xl:mb-12">
+              <div className="grid grid-cols-1 place-items-center lg:place-items-start sm:grid-cols-2 gap-8 mt-5 mb-24 xl:mb-12">
                 <div className="text-center lg:text-left">
                   <h2 className="text-lg font-bold">E-mail</h2>
                   <a target="_blank" className="underline text-gray-700 text-sm" href="mailto:denedojoe16@gmail.com">denedojoe16@gmail.com</a>
