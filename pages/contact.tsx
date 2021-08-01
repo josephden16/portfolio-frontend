@@ -26,7 +26,7 @@ const Contact = ({ links }) => {
               <div className="grid grid-cols-1 place-items-center lg:place-items-start sm:grid-cols-2 gap-8 mt-5 mb-24 xl:mb-12">
                 <div className="text-center lg:text-left">
                   <h2 className="text-lg font-bold">E-mail</h2>
-                  <a target="_blank" className="underline text-gray-700 text-sm" href="mailto:denedojoe16@gmail.com">denedojoe16@gmail.com</a>
+                  <a target="_blank" className="underline text-gray-700 text-sm" href="mailto:tegadev01@gmail.com">tegadev01@gmail.com</a>
                 </div>
                 <div className="text-center lg:text-left">
                   <h2 className="text-lg font-bold">WhatsApp</h2>
