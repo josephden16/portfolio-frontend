@@ -17,7 +17,7 @@ export default function Home({ homepage }) {
             <div>
               <h1 className="font-bold text-5xl mt-4 lg:mt-0 mb-8 text-center lg:text-left lg:text-6xl">Hi there! &#128075;</h1>
               <p className=" text-gray-600 text-center leading-7 sm:m-auto lg:leading-9 lg:text-left lg:w-4/5 lg:m-0 lg:text-lg">
-                I am Denedo Oghenetega Joseph, a Frontend Developer whose core focus is on design and efficiency. I enjoy transforming User Interface designs into code that's functional and easy to maintain.
+                I am Denedo Oghenetega Joseph. Frontend Developer whose core focus is on design and efficiency. I enjoy transforming User Interface designs to code that's functional and easy to maintain.
               </p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Home({ homepage }) {
               <h1 className="font-bold text-3xl mt-4 mb-6 text-center lg:text-left lg:text-4xl">My career so far</h1>
               <p className="text-gray-600 text-center leading-7 sm:w-3/4 sm:m-auto sm:mb-8 lg:leading-9 lg:text-left lg:w-4/5 lg:m-0 lg:text-lg">
                 I am proficient with modern web development tools like React, Next.js, JAMStack and Firebase.
-                I have a interest in learning new things and a passion for working on projects that are relevant to the society.
+                I have interest in learning new things and an eagerness to work on challenging projects.
               </p>
             </div>
             <div>
