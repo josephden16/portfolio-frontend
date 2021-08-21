@@ -13,7 +13,7 @@ const seo = {
 
 
 const Projects = ({ links, projects }) => {
-
+  console.log(projects);
   return (
     <>
       <Layout className="ml-3 mr-3 lg:ml-24 lg:mr-24 xl:ml-36 xl:mr-36 lg:mt-6 mb-10" seo={seo}>
@@ -35,22 +35,22 @@ const fetchProjects = async () => {
     const { data } = await client.query({
       query: gql`
       query {
-        projects {
+        projects(sort: "rank") {
           id
           name
           link
           description
+          rank
           image {
             alternativeText
             url
           }
         }
-      }
+      }      
       `
     });
 
-    return data;
-
+    return data.reverse();
   } catch (error) {
     return { projects: null };
   }

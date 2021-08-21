@@ -4,7 +4,11 @@ import { gql } from "@apollo/client";
 
 // returns link to strapi api based on environment
 export function getStrapiURL(path = "") {
-  return `${process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"}${path}`;
+  if (process.env.NODE_ENV !== "development") {
+    return process.env.NEXT_PUBLIC_STRAPI_API_URL + path;
+  } else {
+    return "http://localhost:1337" + path;
+  }
 }
 
 // Helper to make GET requests to Strapi
