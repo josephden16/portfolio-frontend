@@ -57,9 +57,56 @@ const fetchProjects = async () => {
 }
 
 
+const projects = [
+  {
+    "id": "1",
+    "name": "ZeepDash",
+    "link": "https://zeepdash.vercel.app",
+    "rank": null,
+    "description": "Zeepdash is a user - friendly hobby food ordering web app, streamlining the culinary experience.With a clean interface, it enables seamless menu browsing, and order placement, ensuring delightful and efficient food exploration.",
+    "image": {
+      alternativeText: 'ZeepDash',
+      url: 'https://res.cloudinary.com/tega/image/upload/v1704114065/zeepdash.vercel.app__psvthc.png'
+    }
+  },
+  {
+    "id": "2",
+    "name": "YouTube Clone",
+    "link": "https://youtubecloneapp.vercel.app",
+    "rank": null,
+    "description": "An attempt at building some of the core features on YouTube. I made use of React for building the Frontend and Firebase for backend services like authentication and the database.",
+    "image": {
+      alternativeText: 'YouTube Clone Project',
+      url: 'https://res.cloudinary.com/tega/image/upload/v1620764885/Screenshot_from_2021_05_08_18_54_02_3fae40238e.jpg'
+    }
+  },
+  {
+    "id": "3",
+    "name": "Ip Address Tracker",
+    "link": "https://ip-address-tracker-app.netlify.app",
+    "rank": null,
+    "description": "An IP address tracker web app that displays information about a particular IP address like its location, timezone e.tc...",
+    "image": {
+      alternativeText: 'IP Address Tracker Project',
+      url: 'https://res.cloudinary.com/tega/image/upload/v1620764847/Screenshot_from_2021_05_08_19_36_16_726a1c4ef3.jpg'
+    }
+
+  },
+  {
+    "id": "4",
+    "name": "REST Countries API Project",
+    "link": "https://rest-countries-app.netlify.app",
+    "rank": null,
+    "description": "I built this project after learning Vue.js, it consumes the rest countries api and displays vital information about different countries and has features for searching and filtering.",
+    "image": {
+      alternativeText: 'REST Countries API Project',
+      url: 'https://res.cloudinary.com/tega/image/upload/v1620764904/Screenshot_from_2021_05_08_18_57_05_99f4a55ecf.jpg'
+    }
+  },
+]
+
 export async function getStaticProps() {
   const { homepage } = await fetchSocialLinks();
-  const { projects } = await fetchProjects();
   return {
     props: {
       links: homepage,

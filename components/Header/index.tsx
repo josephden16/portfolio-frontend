@@ -25,11 +25,11 @@ const Header = () => {
 const Links = () => {
   return (
     <div className="flex-row items-center space-x-6 text-sm hidden lg:flex">
-      <Link href="/blog">
+      {/* <Link href="/blog">
         <a className="bg-white hover:bg-black hover:text-white border-2 transition-colors duration-300 border-white text-black text-sm pl-3 pr-3 pt-2 pb-2">
           Blog
         </a>
-      </Link>
+      </Link> */}
       <Link href="/contact">
         <a className="bg-white hover:bg-black hover:text-white border-2 transition-colors duration-300 border-white text-black text-xs pl-3 pr-3 pt-2 pb-2">
           Contact
