@@ -91,12 +91,22 @@ const fetchHomepage = async () => {
 }
 
 export async function getStaticProps() {
-  const { homepage } = await fetchHomepage();
-
+  const homepage = {
+    seo: {
+      metaTitle: 'Projects',
+      metaDescription: 'Projects Page',
+      shareImage: {
+        url: "https://res.cloudinary.com/tega/image/upload/v1620764798/64115475_padded_logo_8367a6b6c8.png",
+        alternativeText: 'Denedo Joseph'
+      }
+    },
+    twitter_link: 'https://x.com/tega_dev',
+    github_link: 'https://github.com/josephden16',
+    linkedin_link: 'https://www.linkedin.com/in/oghenetega-denedo'
+  }
   return {
     props: {
-      homepage: homepage
-    },
-    revalidate: 1
+      homepage
+    }
   }
 }

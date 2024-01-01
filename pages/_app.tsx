@@ -9,7 +9,7 @@ import "../styles/globals.css";
 
 
 // Store Strapi Global object in context
-export const GlobalContext: StrapiGlobalContext | any = createContext({});
+export const GlobalContext: any = createContext(null);
 
 const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps;
@@ -65,12 +65,32 @@ const fetchGlobal = async () => {
   return data;
 }
 
+const global =  {
+  id: 'denedo-joseph',
+  favicon: {
+    url: '"https://res.cloudinary.com/tega/image/upload/v1620764754/favicon_b3d41285b5.ico"',
+    width: '24',
+    height: '24',
+    alternativeText: 'Favicon'
+  },
+  siteName: 'Denedo Joseph',
+  defaultSeo: {
+    id: 'denedo-joseph',
+    metaTitle: 'Denedo Joseph | Frontend Developer',
+    metaDescription: "Hi! I'm a software engineer and technical content creator.",
+    shareImage: {
+      url: "https://res.cloudinary.com/tega/image/upload/v1620764798/64115475_padded_logo_8367a6b6c8.png",
+      width: '840',
+      height: '840',
+      alternativeText: 'Denedo Joseph'
+    }
+  }
+}
+
+
 MyApp.getInitialProps = async (ctx: any) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(ctx);
-  // Fetch global site settings from Strapi
-  const { global } = await fetchGlobal();
-  // Pass the data to our page via props
   return { ...appProps, pageProps: { global } };
 };
 

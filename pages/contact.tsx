@@ -46,12 +46,17 @@ const Contact = ({ links }) => {
   )
 }
 
-export async function getStaticProps() {
-  const { homepage } = await fetchSocialLinks();
 
+
+export async function getStaticProps() {
+  const links = {
+    twitter_link: 'https://twitter.com/tega_dev',
+    github_link: 'https://github.com/josephden16',
+    linkedin_link: 'https://www.linkedin.com/in/oghenetega-denedo'
+  }
   return {
     props: {
-      links: homepage
+      links
     }
   }
 }
